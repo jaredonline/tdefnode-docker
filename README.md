@@ -4,7 +4,7 @@ Getting all the local requirements setup to run this stuff is a pain, especially
 
 ## Requirements
 
-- [Docker][1]:
+- [Docker][1]
 
 ## Instructions
 
@@ -12,6 +12,12 @@ Clone the repo:
 
 ```sh
 git clone git@github.com:jaredonline/tdefnode-docker
+```
+
+Change to the new cloned repository:
+
+```sh
+cd tdefnode-docker
 ```
 
 Build the images:
@@ -29,10 +35,14 @@ cp ~/PATH/TO/YOUR/FILES ./
 Run the docker image:
 
 ```sh
-docker-compose run tdefnode NAME_OF_YOUR_FILE
+docker-compose run --rm tdefnode NAME_OF_YOUR_FILE
 ```
 
-The results of your processing will be in your local directory.
+The results of your processing will be in your local directory. To clean up any Docker related leftovers:
+
+```sh
+docker-compose down
+```
 
 ## Customization
 
