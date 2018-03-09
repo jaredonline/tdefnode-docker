@@ -11,7 +11,7 @@ Getting all the local requirements setup to run this stuff is a pain, especially
 Clone the repo:
 
 ```sh
-git clone git@github.com:jaredonline/tdefnode-docker
+git clone git@github.com:jaredonline/tdefnode-docker.git
 ```
 
 Change to the new cloned repository:
